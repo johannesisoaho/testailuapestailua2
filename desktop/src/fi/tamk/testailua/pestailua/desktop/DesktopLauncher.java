@@ -7,6 +7,9 @@ import fi.tamk.testailua.pestailua.TestailuaPestailua;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+        config.width = 800;
+        config.height = 480;
+        config.title = "paras peli :D";
 		new LwjglApplication(new TestailuaPestailua(), config);
 	}
 }
